@@ -1,1 +1,4 @@
-<!-- dẫn vào controller -->
+<?php
+// require_once "site/index.php";
+?>
+aaa

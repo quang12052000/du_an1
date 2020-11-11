@@ -1,1 +1,5 @@
-<!-- đẫn nó vào index của site dể hiện giao diện user -->
+<?php
+require_once "site/index.php";
+echo"pppppp";
+
+?>
