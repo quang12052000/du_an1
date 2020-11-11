@@ -8,18 +8,18 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./site/views/fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./site/views/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./site/views/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./site/views/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./site/views/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./site/views/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./site/views/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="./site/views/css/aos.css">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./site/views/css/style.css">
 
 </head>
 
@@ -74,7 +74,7 @@
         </header>
 
 
-        <div class="hero" style="background-image: url('images/hero_1_a.jpg');">
+        <div class="hero" style="background-image: url('./site/views/images/hero_1_a.jpg');">
 
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -123,9 +123,13 @@
                 </div>
             </div>
         </div>
-<?php
-require_once "$views";
-?>
+        <?php
+         if (isset($view) && file_exists($view)) {
+            require_once "$view";
+        } else {
+            echo "Đang cập nhật";
+        }
+     ?>
 
 <footer class="site-footer">
             <div class="container">
@@ -205,19 +209,19 @@ require_once "$views";
 
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="./site/views/js/jquery-3.3.1.min.js"></script>
+    <script src="./site/views/js/popper.min.js"></script>
+    <script src="./site/views/js/bootstrap.min.js"></script>
+    <script src="./site/views/js/owl.carousel.min.js"></script>
+    <script src="./site/views/js/jquery.sticky.js"></script>
+    <script src="./site/views/js/jquery.waypoints.min.js"></script>
+    <script src="./site/views/js/jquery.animateNumber.min.js"></script>
+    <script src="./site/views/js/jquery.fancybox.min.js"></script>
+    <script src="./site/views/js/jquery.easing.1.3.js"></script>
+    <script src="./site/views/js/bootstrap-datepicker.min.js"></script>
+    <script src="./site/views/js/aos.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="./site/views/js/main.js"></script>
 
 </body>
 

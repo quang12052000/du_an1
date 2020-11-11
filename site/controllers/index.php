@@ -1,17 +1,15 @@
 <?php
-if ($_GET['act']) {
-    $act=$_GET['act'];
-}else{
-    $act="home";
-}
-switch ($act) {
-    case 'home':
-        $view="./views/home.php";
-        require_once "./views/layout.php";
-        break;
+   require_once "./site/models/index.php"; 
+  $act = "index";//chức năng mặc định
+
+  if(isset($_GET["act"])==true) $act=$_GET["act"];//tiếp nhận chức năng user request
+  switch ($act) {
+    case "index":
+        $showxe=showxe();
+        $view="./site/views/home.php";
+        require_once "./site/layout.php";
+    break;
     
-    default:
-        # code...
-        break;
-}
+  }
+
 ?>
