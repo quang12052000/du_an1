@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./site/views/fonts/icomoon/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./site/views/css/bootstrap.min.css">
     <link rel="stylesheet" href="./site/views/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="./site/views/css/jquery.fancybox.min.css">
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./site/views/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./site/views/fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="./site/views/css/aos.css">
-
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./site/views/css/style.css">
 
@@ -46,7 +45,7 @@
 
                     <div class="col-3">
                         <div class="site-logo">
-                            <a href="index.html"><strong>CarRental</strong></a>
+                            <a href="index.php"><strong>CarRental</strong></a>
                         </div>
                     </div>
 

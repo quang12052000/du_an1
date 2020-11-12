@@ -9,6 +9,12 @@
         $view="./site/views/home.php";
         require_once "./site/layout.php";
     break;
+    case "ctxe":
+      $idxe=$_GET['idxe'];
+      $ctxe=ctxe($idxe);
+      $view="./site/views/ctxe.php";
+      require_once "./site/layout.php";
+    break;
     
   }
 
