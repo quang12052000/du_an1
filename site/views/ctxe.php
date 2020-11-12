@@ -38,9 +38,9 @@
                     <h3 class="product-title"><?=$ctxe['Ten_xe']?></h3>
                     <div class="rating">
                         <div class="stars"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
-                        </div> <span class="review-no"><?=$ctxe['Soluotxem']?></span>
+                        </div> <span class="review-no">Số lượt xem : <?=$ctxe['Soluotxem']?></span>
                     </div>
-                    <p class="product-description"></p><?=$ctxe['tinh_nang']?></p>
+                    <p class="product-description"></p>Mô tả :<?=$ctxe['mota']?></p>
                     <h4 class="price">Giá Thuê: <?=$ctxe['Gia_thue']?>đ/ngày</h4>
 
                     </p>
