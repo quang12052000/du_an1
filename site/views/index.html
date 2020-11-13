@@ -5,11 +5,8 @@
     <title>CarRental &mdash; Free Website Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -17,17 +14,23 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
-
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
+<style>
+button{
+    width: 10%;
+    height: 50px;
+    background-color: rgb(112, 180, 146);
+    border-radius: 20px 20px 20px;
+    box-shadow: cadetblue 5px 5px 25px 2px;
+}
+button:hover{
+    background-color: bisque;
+}
+</style>
 <body>
-
-
     <div class="site-wrap" id="home-section">
-
         <div class="site-mobile-menu site-navbar-target">
             <div class="site-mobile-menu-header">
                 <div class="site-mobile-menu-close mt-3">
@@ -36,63 +39,45 @@
             </div>
             <div class="site-mobile-menu-body"></div>
         </div>
-
-
-
         <header class="site-navbar site-navbar-target" role="banner">
-
             <div class="container">
                 <div class="row align-items-center position-relative">
-
                     <div class="col-3">
                         <div class="site-logo">
                             <a href="index.html"><strong>CarRental</strong></a>
                         </div>
                     </div>
-
                     <div class="col-9  text-right">
-
                         <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a>
                         </span>
-
                         <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                             <ul class="site-menu main-menu js-clone-nav ml-auto ">
                                 <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                                <li><a href="listing.html" class="nav-link">Listing</a></li>
-                                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                                <li><a href="about.html" class="nav-link">About</a></li>
-                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="listing.html" class="nav-link">Danh Sách Xe</a></li>
+                                <li><a href="testimonials.html" class="nav-link">Các Đánh Giá</a></li>
+                                <button type="dangnhap">login</button>
+                                <button type="dangky">signin</button>
+                                
                             </ul>
                         </nav>
                     </div>
-
-
                 </div>
             </div>
-
         </header>
-
-
         <div class="hero" style="background-image: url('images/hero_1_a.jpg');">
-
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-10">
-
                         <div class="row mb-5">
                             <div class="col-lg-7 intro">
-                                <h1><strong>Rent a car</strong> is within your finger tips.</h1>
+                                <h1><strong>Thuê một chiếc xe </strong> là trong tầm tay của bạn.</h1>
                             </div>
                         </div>
-
                         <form class="trip-form">
-
                             <div class="row align-items-center">
-
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <select name="" id="" class="custom-select form-control">
-                      <option value="">Select Type</option>
+                      <option value="">Hãng Xe</option>
                       <option value="">Ferrari</option>
                       <option value="">Toyota</option>
                       <option value="">Ford</option>
@@ -101,32 +86,25 @@
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <div class="form-control-wrap">
-                                        <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
+                                        <input type="text" id="cf-3" placeholder="bắt đầu" class="form-control datepicker px-3">
                                         <span class="icon icon-date_range"></span>
-
                                     </div>
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <div class="form-control-wrap">
-                                        <input type="text" id="cf-4" placeholder="Drop off" class="form-control datepicker px-3">
+                                        <input type="text" id="cf-4" placeholder="Kết Thúc" class="form-control datepicker px-3">
                                         <span class="icon icon-date_range"></span>
                                     </div>
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
-                                    <input type="submit" value="Search Now" class="btn btn-primary btn-block py-3">
+                                    <input type="submit" value="Tìm ngay" class="btn btn-primary btn-block py-3">
                                 </div>
                             </div>
-
                         </form>
-
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
         <div class="site-section">
             <div class="container">
                 <div class="row align-items-center">
@@ -136,237 +114,177 @@
                         </div>
                     </div>
                     <div class="col-lg-4 ml-auto order-lg-1">
-                        <h3 class="mb-4 section-heading"><strong>You can easily avail our promo for renting a car.</strong></h3>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam, voluptatibus voluptates optio accusamus, vel quasi quidem!</p>
+                        <h3 class="mb-4 section-heading"><strong>Bạn có thể dễ dàng tận dụng quảng cáo của chúng tôi để thuê một chiếc xe hơi.</strong></h3>
+                        <p class="mb-5">Đến Với Dịch Vụ thuê Xe Của Chúng Tôi Bạn Cứ Yên Tâm Trên Chiếc xe hộp của mình bạn sẽ cảm thấy thú vị trên mọi cung đường.</p>
 
-                        <p><a href="#" class="btn btn-primary">Meet them now</a></p>
+                        <p><a href="#" class="btn btn-primary">Gặp họ bây giờ</a></p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
         <div class="site-section bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <h2 class="section-heading"><strong>Car Listings</strong></h2>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2 class="section-heading"><strong>Danh Sách Xe</strong></h2>
+                        <p class="mb-5">Dưới đây là các mẫu xe mới nhất hiện tại và được nhiều người xem.</p>
                     </div>
                 </div>
-
-
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-4">
-
                         <div class="listing d-block  align-items-stretch">
                             <div class="listing-img h-100 mr-4">
-                                <img src="images/car_6.jpg" alt="Image" class="img-fluid">
+                                <img src="images/product/details/5.jpg" alt="Image" class="img-fluid">
                             </div>
                             <div class="listing-contents h-100">
-                                <a href="listing.html">
-                                    <h3>Mitsubishi Pajeros</h3>
+                                <a href="chitiet.html">
+                                    <h3>Mitsubishi Pajero Sport 2020</h3>
                                 </a>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                                    <p><a href="contact.html" class="btn btn-primary btn-sm">Rent Now</a></p>
+                                    <p>Sau nhiều tháng chờ đợi, mẫu xe Mitsubishi Pajero Sport 2020 nhập khẩu Thái Lan đã chính thức có mặt tại Việt Nam vào đầu tháng 10 với nhiều thay đổi từ ngoại hình đến trang bị an toàn.</p>
+                                    <p><a href="contact.html" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-4 mb-4">
-
                         <div class="listing d-block  align-items-stretch">
                             <div class="listing-img h-100 mr-4">
                                 <img src="images/car_5.jpg" alt="Image" class="img-fluid">
                             </div>
                             <div class="listing-contents h-100">
-                                <h3>Nissan Moco</h3>
-
-
+                                <a href="chitiet.html">
+                                <h3>WIGO 4AT</h3>
+                                </a>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                                    <p><a href="#" class="btn btn-primary btn-sm">Rent Now</a></p>
+                                    <p>Sở hữu ngoại hình đậm chất thể thao với ngôn ngữ thiết kế trẻ trung và nhiều lựa chọn về màu sắc, xứng đáng là chiếc xe hơi đầu tiên của bạn.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-
                     <div class="col-md-6 col-lg-4 mb-4">
-
                         <div class="listing d-block  align-items-stretch">
                             <div class="listing-img h-100 mr-4">
                                 <img src="images/car_4.jpg" alt="Image" class="img-fluid">
                             </div>
                             <div class="listing-contents h-100">
-                                <h3>Honda Fitta</h3>
+                                <a href="chitiet.html">
+                                <h3>COROLLA CROSS 1.8HV</h3>
+                                </a>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                                    <p><a href="#" class="btn btn-primary btn-sm">Rent Now</a></p>
+                                    <p>Định hướng thiết kế của Corolla Cross nhắm tới xu hướng trưởng thành và đô thị, khác biệt với các mẫu xe hiện tại của Toyota.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-4 mb-4">
-
                         <div class="listing d-block  align-items-stretch">
                             <div class="listing-img h-100 mr-4">
                                 <img src="images/car_3.jpg" alt="Image" class="img-fluid">
                             </div>
                             <div class="listing-contents h-100">
-                                <h3>Skoda Laura</h3>
-
-
+                                <a href="chitiet.html">
+                                <h3>Xpander Cross AT</h3>
+                                </a>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                                    <p><a href="#" class="btn btn-primary btn-sm">Rent Now</a></p>
+                                    <p>Xe khá Mới Và sạch sẽ tiết kiệm nhiên liệu tuyệt đối cho chuyến đi của bạn</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-4 mb-4">
-
                         <div class="listing d-block  align-items-stretch">
                             <div class="listing-img h-100 mr-4">
                                 <img src="images/car_2.jpg" alt="Image" class="img-fluid">
                             </div>
                             <div class="listing-contents h-100">
-                                <h3>Mazda LaPuta</h3>
+                                <a href="chitiet.html">
+                                <h3>New Xpander </h3>
+                                </a>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                                    <p><a href="#" class="btn btn-primary btn-sm">Rent Now</a></p>
+                                    <p>Kế thừa những ưu điểm của phiên bản tiền nhiệm, Xpander mới với những nâng cấp hiện đại hơn sẽ tiếp tục mở ra các “HÀNH TRÌNH RỘNG MỞ”.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-
                     <div class="col-md-6 col-lg-4 mb-4">
-
                         <div class="listing d-block  align-items-stretch">
                             <div class="listing-img h-100 mr-4">
                                 <img src="images/car_1.jpg" alt="Image" class="img-fluid">
                             </div>
                             <div class="listing-contents h-100">
-                                <h3>Buick LaCrosse</h3>
-
+                                <a href="chitiet.html">
+                                <h3>BMW X2</h3>
+                                </a>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                                    <p><a href="#" class="btn btn-primary btn-sm">Rent Now</a></p>
+                                    <p>Thu hút ngay từ cái nhìn đầu tiên: mặt trước được thiết kế với bộ cản mạnh mẽ và cửa hút gió ba ngăn đảm bảo làm mát tốt hơn cho hệ thống phanh và động cơ. Ngoài ra, màn chắn gió tích hợp vào các cửa hút gió ngoài ra còn giúp giảm lực cản của gió lên thân xe.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="listing d-block  align-items-stretch">
+                            <div class="listing-img h-100 mr-4">
+                                <img src="images/car_1.jpg" alt="Image" class="img-fluid">
+                            </div>
+                            <div class="listing-contents h-100">
+                                <a href="chitiet.html">
+                                <h3>BMW X2</h3>
+                                </a>
+                                <div>
+                                    <p>Thu hút ngay từ cái nhìn đầu tiên: mặt trước được thiết kế với bộ cản mạnh mẽ và cửa hút gió ba ngăn đảm bảo làm mát tốt hơn cho hệ thống phanh và động cơ. Ngoài ra, màn chắn gió tích hợp vào các cửa hút gió ngoài ra còn giúp giảm lực cản của gió lên thân xe.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="listing d-block  align-items-stretch">
+                            <div class="listing-img h-100 mr-4">
+                                <img src="images/car_1.jpg" alt="Image" class="img-fluid">
+                            </div>
+                            <div class="listing-contents h-100">
+                                <a href="chitiet.html">
+                                <h3>BMW X2</h3>
+                                </a>
+                                <div>
+                                    <p>Thu hút ngay từ cái nhìn đầu tiên: mặt trước được thiết kế với bộ cản mạnh mẽ và cửa hút gió ba ngăn đảm bảo làm mát tốt hơn cho hệ thống phanh và động cơ. Ngoài ra, màn chắn gió tích hợp vào các cửa hút gió ngoài ra còn giúp giảm lực cản của gió lên thân xe.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="listing d-block  align-items-stretch">
+                            <div class="listing-img h-100 mr-4">
+                                <img src="images/car_1.jpg" alt="Image" class="img-fluid">
+                            </div>
+                            <div class="listing-contents h-100">
+                                <a href="chitiet.html">
+                                <h3>BMW X2</h3>
+                                </a>
+                                <div>
+                                    <p>Thu hút ngay từ cái nhìn đầu tiên: mặt trước được thiết kế với bộ cản mạnh mẽ và cửa hút gió ba ngăn đảm bảo làm mát tốt hơn cho hệ thống phanh và động cơ. Ngoài ra, màn chắn gió tích hợp vào các cửa hút gió ngoài ra còn giúp giảm lực cản của gió lên thân xe.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">Thuê Ngay</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="site-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <h2 class="section-heading"><strong>Features</strong></h2>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-home"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-gear"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-watch_later"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-verified_user"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-video_library"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-vpn_key"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
         <div class="site-section bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <h2 class="section-heading"><strong>Testimonials</strong></h2>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2 class="section-heading"><strong>Bình Luận Của Khách Hàng thân Thiết</strong></h2>
+                        <p class="mb-5">Họ rất Hài Lòng Về Chất Lượng Của Chúng Tôi.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -420,37 +338,29 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 mb-4 mb-md-0">
-                        <h2 class="mb-0 text-white">What are you waiting for?</h2>
-                        <p class="mb-0 opa-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <h2 class="mb-0 text-white">Bạn còn chờ gì nữa?</h2>
+                        <p class="mb-0 opa-7">Thuê Ngay Một Chiếc Xe Bạn Thích Đi Nào.</p>
                     </div>
                     <div class="col-lg-5 text-md-right">
 
 
                         <div class="form-control-wrap">
-                            <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
+                            <input type="text" id="cf-3" placeholder="Bắt Đầu" class="form-control datepicker px-3">
                             <span class="icon icon-date_range"></span>
 
                         </div>
                         <div class="form-control-wrap">
-                            <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
+                            <input type="text" id="cf-3" placeholder="Kết Thúc" class="form-control datepicker px-3">
                             <span class="icon icon-date_range"></span>
-
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
         </div>
-
-
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <h2 class="footer-heading mb-4">About Us</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
                         <ul class="list-unstyled social">
                             <li><a href="#"><span class="icon-facebook"></span></a></li>
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
@@ -461,45 +371,36 @@
                     <div class="col-lg-8 ml-auto">
                         <div class="row">
                             <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Quick Links</h2>
+                                <h2 class="footer-heading mb-4">Chính sách</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Chính sách và quy định</a></li>
+                                    <li><a href="#">Quy chế hoạt động</a></li>
+                                    <li><a href="#">Quy chế hoạt động</a></li>
                                     <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Giải quyết tranh chấp</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Resources</h2>
+                                <h2 class="footer-heading mb-4">Tìm hiểu thêm</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Hướng dẫn chung</a></li>
+                                    <li><a href="#">Hướng dẫn đặt xe</a></li>
+                                    <li><a href="#">Hướng dẫn dành cho chủ xe</a></li>
+                                    <li><a href="#">Hướng dẫn thanh toán</a></li>
+                                    <li><a href="#">Hỏi và trả lời</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Support</h2>
+                                <h2 class="footer-heading mb-4">Đối tác</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Đăng ký chủ xe</a></li>
+                                    <li><a href="#">Đăng ký đại lý Mioto</a></li>
+                                    <li><a href="#">Đăng ký thuê xe doanh nghiệp</a></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Company</h2>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15675.210986536726!2d106.6085871697754!3d10.826402200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1605169971153!5m2!1svi!2s" width="100%" height="660" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -508,10 +409,10 @@
                         <div class="border-top pt-5">
                             <p>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
+                                Copyright &copy; 
                                 <script>
                                     document.write(new Date().getFullYear());
-                                </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                </script><i class="icon-heart text-danger" aria-hidden="true"></i> 
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
@@ -520,9 +421,7 @@
                 </div>
             </div>
         </footer>
-
     </div>
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -534,9 +433,6 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/aos.js"></script>
-
     <script src="js/main.js"></script>
-
 </body>
-
 </html>
