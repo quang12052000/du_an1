@@ -7,10 +7,10 @@
                         </div>
                     </div>
                     <div class="col-lg-4 ml-auto order-lg-1">
-                        <h3 class="mb-4 section-heading"><strong>You can easily avail our promo for renting a car.</strong></h3>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam, voluptatibus voluptates optio accusamus, vel quasi quidem!</p>
+                        <h3 class="mb-4 section-heading"><strong>Bạn có thể dễ dàng tận dụng quảng cáo của chúng tôi để thuê một chiếc xe hơi.</strong></h3>
+                        <p class="mb-5">Đến Với Dịch Vụ thuê Xe Của Chúng Tôi Bạn Cứ Yên Tâm Trên Chiếc xe hộp của mình bạn sẽ cảm thấy thú vị trên mọi cung đường.</p>
 
-                        <p><a href="#" class="btn btn-primary">Meet them now</a></p>
+                        <p><a href="#" class="btn btn-primary">Gặp họ bây giờ</a></p>
                     </div>
                 </div>
             </div>
@@ -20,10 +20,10 @@
 
         <div class="site-section bg-light">
             <div class="container">
-                <div class="row">
+            <div class="row">
                     <div class="col-lg-7">
-                        <h2 class="section-heading"><strong>Car Listings</strong></h2>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2 class="section-heading"><strong>Danh Sách Xe</strong></h2>
+                        <p class="mb-5">Dưới đây là các mẫu xe mới nhất hiện tại và được nhiều người xem.</p>
                     </div>
                 </div>
 
@@ -61,101 +61,12 @@
                 </div>
             </div>
         </div>
-
-        <div class="site-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <h2 class="section-heading"><strong>Features</strong></h2>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-home"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-gear"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-watch_later"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-verified_user"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-video_library"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="service-1 dark">
-                            <span class="service-1-icon">
-                <span class="icon-vpn_key"></span>
-                            </span>
-                            <div class="service-1-contents">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                                <p class="mb-0"><a href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
         <div class="site-section bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <h2 class="section-heading"><strong>Testimonials</strong></h2>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2 class="section-heading"><strong>Bình Luận Của Khách Hàng thân Thiết</strong></h2>
+                        <p class="mb-5">Họ rất Hài Lòng Về Chất Lượng Của Chúng Tôi.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -209,25 +120,21 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 mb-4 mb-md-0">
-                        <h2 class="mb-0 text-white">What are you waiting for?</h2>
-                        <p class="mb-0 opa-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <h2 class="mb-0 text-white">Bạn còn chờ gì nữa?</h2>
+                        <p class="mb-0 opa-7">Thuê Ngay Một Chiếc Xe Bạn Thích Đi Nào.</p>
                     </div>
                     <div class="col-lg-5 text-md-right">
 
 
                         <div class="form-control-wrap">
-                            <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
+                            <input type="text" id="cf-3" placeholder="Bắt Đầu" class="form-control datepicker px-3">
                             <span class="icon icon-date_range"></span>
 
                         </div>
                         <div class="form-control-wrap">
-                            <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
+                            <input type="text" id="cf-3" placeholder="Kết Thúc" class="form-control datepicker px-3">
                             <span class="icon icon-date_range"></span>
-
                         </div>
-
-
-
                     </div>
                 </div>
             </div>

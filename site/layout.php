@@ -21,6 +21,18 @@
     <link rel="stylesheet" href="./site/views/css/style.css">
 
 </head>
+<style>
+button{
+    width: 10%;
+    height: 50px;
+    background-color: rgb(112, 180, 146);
+    border-radius: 20px 20px 20px;
+    box-shadow: cadetblue 5px 5px 25px 2px;
+}
+button:hover{
+    background-color: bisque;
+}
+</style>
 
 <body>
 
@@ -56,12 +68,12 @@
 
                         <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                             <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                                <li><a href="listing.html" class="nav-link">Listing</a></li>
-                                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                                <li><a href="about.html" class="nav-link">About</a></li>
-                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li class="active"><a href="index.php" class="nav-link">Home</a></li>
+                                <li><a href="listing.html" class="nav-link">Danh Sách Xe</a></li>
+                                <li><a href="testimonials.html" class="nav-link">Các Đánh Giá</a></li>
+                                <button type="dangnhap">login</button>
+                                <button type="dangky">signin</button>
+                                
                             </ul>
                         </nav>
                     </div>
@@ -81,7 +93,7 @@
 
                         <div class="row mb-5">
                             <div class="col-lg-7 intro">
-                                <h1><strong>Rent a car</strong> is within your finger tips.</h1>
+                            <h1><strong>Thuê một chiếc xe </strong> là trong tầm tay của bạn.</h1>
                             </div>
                         </div>
 
@@ -91,7 +103,7 @@
 
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <select name="" id="" class="custom-select form-control">
-                      <option value="">Select Type</option>
+                      <option value="">Loại Xe</option>
                       <option value="">Ferrari</option>
                       <option value="">Toyota</option>
                       <option value="">Ford</option>
@@ -100,19 +112,18 @@
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <div class="form-control-wrap">
-                                        <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
+                                        <input type="text" id="cf-3" placeholder="bắt đầu" class="form-control datepicker px-3">
                                         <span class="icon icon-date_range"></span>
-
                                     </div>
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <div class="form-control-wrap">
-                                        <input type="text" id="cf-4" placeholder="Drop off" class="form-control datepicker px-3">
+                                        <input type="text" id="cf-4" placeholder="Kết Thúc" class="form-control datepicker px-3">
                                         <span class="icon icon-date_range"></span>
                                     </div>
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
-                                    <input type="submit" value="Search Now" class="btn btn-primary btn-block py-3">
+                                    <input type="submit" value="Tìm ngay" class="btn btn-primary btn-block py-3">
                                 </div>
                             </div>
 
@@ -134,8 +145,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <h2 class="footer-heading mb-4">About Us</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
                         <ul class="list-unstyled social">
                             <li><a href="#"><span class="icon-facebook"></span></a></li>
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
@@ -146,64 +155,40 @@
                     <div class="col-lg-8 ml-auto">
                         <div class="row">
                             <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Quick Links</h2>
+                                <h2 class="footer-heading mb-4">Chính sách</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Chính sách và quy định</a></li>
+                                    <li><a href="#">Quy chế hoạt động</a></li>
+                                    <li><a href="#">Quy chế hoạt động</a></li>
                                     <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Giải quyết tranh chấp</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Resources</h2>
+                                <h2 class="footer-heading mb-4">Tìm hiểu thêm</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Hướng dẫn chung</a></li>
+                                    <li><a href="#">Hướng dẫn đặt xe</a></li>
+                                    <li><a href="#">Hướng dẫn dành cho chủ xe</a></li>
+                                    <li><a href="#">Hướng dẫn thanh toán</a></li>
+                                    <li><a href="#">Hỏi và trả lời</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Support</h2>
+                                <h2 class="footer-heading mb-4">Đối tác</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3">
-                                <h2 class="footer-heading mb-4">Company</h2>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Đăng ký chủ xe</a></li>
+                                    <li><a href="#">Đăng ký đại lý Mioto</a></li>
+                                    <li><a href="#">Đăng ký thuê xe doanh nghiệp</a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row pt-5 mt-5 text-center">
-                    <div class="col-md-12">
-                        <div class="border-top pt-5">
-                            <p>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
+                        <div class="maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15675.210986536726!2d106.6085871697754!3d10.826402200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1605169971153!5m2!1svi!2s" width="100%" height="660" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
-
                 </div>
-            </div>
+                
         </footer>
 
     </div>
