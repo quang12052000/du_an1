@@ -1,6 +1,6 @@
 <?php
-// ob_start();
-//   session_start();
+    ob_start();
+  session_start();
 //   define('ARR_CONTROLLERS', ["index"]);
 //   $ctrl='index';
 //   if(isset($_GET['ctrl'])==true) $ctrl=$_GET['ctrl'];    

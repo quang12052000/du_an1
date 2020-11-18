@@ -71,7 +71,14 @@ button:hover{
                                 <li class="active"><a href="index.php" class="nav-link">Home</a></li>
                                 <li><a href="listing.html" class="nav-link">Danh Sách Xe</a></li>
                                 <li><a href="testimonials.html" class="nav-link">Các Đánh Giá</a></li>
-                                <button type="dangnhap">login</button>
+                                <?php
+                                if (isset($_SESSION['user'])) {
+                                echo ' <a href="index.php?act=logout"> <button type="dangnhap">Đăng xuất</button></a>';
+                                }else{
+                                    echo '<a href="index.php?act=login1"> <button type="dangnhap">login</button></a>';
+                                }
+                                ?>
+                        
                                 <button type="dangky">signin</button>
                                 
                             </ul>
