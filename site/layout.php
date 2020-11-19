@@ -21,22 +21,7 @@
     <link rel="stylesheet" href="./site/views/css/style.css">
 
 </head>
-<style>
-button{
-    width: 10%;
-    height: 50px;
-    background-color: rgb(112, 180, 146);
-    border-radius: 20px 20px 20px;
-    box-shadow: cadetblue 5px 5px 25px 2px;
-}
-button:hover{
-    background-color: bisque;
-}
-</style>
-
 <body>
-
-
     <div class="site-wrap" id="home-section">
 
         <div class="site-mobile-menu site-navbar-target">
@@ -47,9 +32,6 @@ button:hover{
             </div>
             <div class="site-mobile-menu-body"></div>
         </div>
-
-
-
         <header class="site-navbar site-navbar-target" role="banner">
 
             <div class="container">
@@ -75,11 +57,11 @@ button:hover{
                                 if (isset($_SESSION['user'])) {
                                 echo ' <a href="index.php?act=logout"> <button type="dangnhap">Đăng xuất</button></a>';
                                 }else{
-                                    echo '<a href="index.php?act=login1"> <button type="dangnhap">login</button></a>';
+                                    echo '<a href="index.php?act=login1"> <input type="submit" value="Đăng Nhập"></a>';
                                 }
                                 ?>
                         
-                                <button type="dangky">signin</button>
+                                <input type="submit" value="Đăng Ký" style="margin-left: 20px;">
                                 
                             </ul>
                         </nav>

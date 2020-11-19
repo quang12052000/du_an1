@@ -1,10 +1,90 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+}
 
+/* The actual popup */
+.popup .popuptext {
+    float: left;
+  visibility: hidden;
+  width: 2500px;
+  min-height: 450px;
+  background-color: #555;
+  color: black;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
 
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 8s;
+  animation: fadeIn 2s;
+}
 
-    <div class="container">
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+</head>
+<style>
+    .container-fliud{
+        margin-top: 200px;
+    }
+    .tab-pane img{
+        min-height: 600px;
+        width: 1000px;
+    }
+    .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+</style>
+    <div class="container" style=" margin-left:100px;">
         <div class="container-fliud">
-            <div class="wrapper row">
+            <div class="wrapper row" style="width: 1500px;">
                 <div class="preview col-md-6">
                     <div class="preview-pic tab-content">
                         <div class="tab-pane active" id="pic-1"><img src="./site/views/images/<?=$ctxe['hinh_xe']?>" alt="">
@@ -34,21 +114,11 @@
                                 <a data-target="#pic-5" data-toggle="tab"><img src="images/product/details/4.jpg"></a>
                             </li> -->
                         </ul>
-                        <div class="thongtin" style="width: 100%; background-color: darkkhaki; min-height: 500px; margin-top: 30px;">
-                            <table>
-                                <p>ĐẶC ĐIỂM</p>
-                                <h6>Số ghế: <?=$ctxe['Loaixe']?></h6>
-                                <span>Tinh nang: <?=$ctxe['tinh_nang']?></span>
-                                
-                                <h5>Nhiên liệu: <?=$ctxe['Nhien_lieu']?></h5>
-                               
-                                <!-- <strong></strong> -->
-                            </table>
-                        </div>
                     </div>
                     
                 </div>
-                <div class="details col-md-6">
+                <div class="details col-md-6    ">
+                    <div class="form-thuexe" style="width:100%; height: 900px;">
                     <h3 class="product-title" style="color: black; font-weight: bolder;"><?=$ctxe['Ten_xe']?></h3>
                                 <div class="rating">
                                     <div class="stars"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
@@ -57,44 +127,31 @@
                                 <p class="product-description"></p><?=$ctxe['mota']?></p>
                                 <h4 class="price">Giá Thuê:  <?=$ctxe['Gia_thue']?>đ/ngày</h4>
                                 </p>
-                    <div class="form-thuexe" style="width:100%; border: 1px black solid ; height: 900px; border-radius: 20px 20px 20px; box-shadow: slategray 5px 10px 10px 5px;">
-                        <form>
-                            <center><div class="form-group">
-                                <h1 style="position: absolute; margin-left: 130px; margin-top: -35px; color: green; font-weight: bold; text-shadow: gray 10px 5px 10px; z-index: 999;">THÔNG TIN</h1>
-                                <br>
-                              <label for="exampleInputEmail1"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Họ tên khách Hàng</span></label>
-                              <input type="hoten" class="form-control" id="hoten" aria-describedby="hoten" style="width:85%" placeholder="Họ và Tên">
-                              <small id="hoten" class="form-text text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Địa chỉ khách Hàng</span></label>
-                              <input type="diachi" class="form-control" id="diachi"style="width:85% " placeholder="Địa Chỉ">
-                            </div>
-                            <div class="form-group">
-                                <label for="sdt"><span class="d-block text-black" style="font-size: 18pt; margin-right: 250px;">Số Điện Thoại</span></label>
-                                <input type="sdt" class="form-control" id="sdt"style="width:85%" placeholder="Số Điện Thoại">
-                              </div>
-                            <div class="form-group">
-                               <label for="gmail"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Gmail Khách Hàng</span></label>
-                               <input type="gmail" class="form-control" id="gmail"style="width:85%" placeholder="Gmail">
-                            </div>
-                              <span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Thời Gian bắt đầu:</span>
-                              <div class="form-control-wrap">
-                                <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3" style="width:85%">
-                                <span class="icon icon-date_range"></span>
-                              </div>
-                            <span class="d-block text-black"style="font-size: 18pt; margin-right: 200px;">Thời Gian Kết Thúc:</span></li>
-                            <div class="form-control-wrap">
-                              <input type="text" id="cf-4" placeholder="Drop off" class="form-control datepicker px-3" style="width:85%">
-                              <span class="icon icon-date_range"></span>
-                            </div>
-                            <br>    
-                            <div class="action">
-                                <a href="contact.html" target="_blank"> <button class="add-to-cart btn btn-default" type="button">Đặt Xe NGAY</button> </a>
-                                <a href="http://hocwebgiare.com/" target="_blank"> <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> </a>
-                            </div>  
-                            </center>
-                          </form>
+                                <table>
+                                <p>ĐẶC ĐIỂM</p>
+                                <h6>Số ghế: <?=$ctxe['Loaixe']?></h6>
+                                <span>Tinh nang: <?=$ctxe['tinh_nang']?></span>
+                                
+                                <h5>Nhiên liệu: <?=$ctxe['Nhien_lieu']?></h5>
+                                <!-- popup -->
+                                    <div class="popup" onclick="myFunction()"><input type="button" value="Thuê Ngay" class="button">
+                                    <span class="popuptext" id="myPopup">
+                                        <form action="">
+                                            <h1>Điền Thông Tin Đặt Xe</h1>
+                                            <h6>họ tên</h6>
+                                            <input type="datetime" name="" id="">
+                                            <h6>sdt</h6>
+                                        </form>
+                                    </span>
+                                    </div>
+                                    <script>
+                                    // When the user clicks on div, open the popup
+                                    function myFunction() {
+                                    var popup = document.getElementById("myPopup");
+                                    popup.classList.toggle("show");
+                                    }
+                                    </script>
+                            </table>
                     </div>
                 </div>
             </div>
