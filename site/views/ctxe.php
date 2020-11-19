@@ -1,65 +1,10 @@
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    float: left;
-  visibility: hidden;
-  width: 2500px;
-  min-height: 450px;
-  background-color: #555;
-  color: black;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 8s;
-  animation: fadeIn 2s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
     .container-fliud{
@@ -79,7 +24,13 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor: pointer;    
+    }
+    .btn-default{
+        width: 100px;
+        height: 50px;
+        background-color: aquamarine;
+        font-size: 12pt;
     }
 </style>
     <div class="container" style=" margin-left:100px;">
@@ -133,24 +84,40 @@
                                 <span>Tinh nang: <?=$ctxe['tinh_nang']?></span>
                                 
                                 <h5>Nhiên liệu: <?=$ctxe['Nhien_lieu']?></h5>
-                                <!-- popup -->
-                                    <div class="popup" onclick="myFunction()"><input type="button" value="Thuê Ngay" class="button">
-                                    <span class="popuptext" id="myPopup">
-                                        <form action="">
-                                            <h1>Điền Thông Tin Đặt Xe</h1>
-                                            <h6>họ tên</h6>
-                                            <input type="datetime" name="" id="">
-                                            <h6>sdt</h6>
-                                        </form>
-                                    </span>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Thuê Xe Ngay</button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" role="dialog">
+                                        <div class="modal-dialog">
+                                        
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <form action="">
+                                                <center>
+                                                <h1>Thông Tin Của Bạn</h1>
+                                                <h3>Họ Và Tên</h3>
+                                                <input type="text" name="hoten">
+                                                <h3>Số Điện Thoại</h3>
+                                                <input type="text" name="sdr">
+                                                <h3>Email</h3>
+                                                <input type="text" name="email">
+                                                <h3>Địa Chỉ</h3>
+                                                <input type="text" name="email">
+                                                </center>
+                                            </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Hoàn Tất</button>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>
                                     </div>
-                                    <script>
-                                    // When the user clicks on div, open the popup
-                                    function myFunction() {
-                                    var popup = document.getElementById("myPopup");
-                                    popup.classList.toggle("show");
-                                    }
-                                    </script>
                             </table>
                     </div>
                 </div>
