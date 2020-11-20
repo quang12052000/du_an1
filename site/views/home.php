@@ -28,7 +28,7 @@
                 </div>
 
 
-                <div class="row">         
+                <div class="row" style=" margin-bottom:-120px">         
                 <?php
                    foreach ($showxe as $k) {?>
                          <div class="col-md-6 col-lg-4 mb-4">
@@ -63,9 +63,9 @@
         </div>
         <div class="site-section bg-light">
             <div class="container">
-                <div class="row">
+                <div class="row" >
                     <div class="col-lg-7">
-                        <h2 class="section-heading"><strong>Bình Luận Của Khách Hàng thân Thiết</strong></h2>
+                        <h2 class="section-heading" ><strong>Feedback Khách Hàng</strong></h2>
                         <p class="mb-5">Họ rất Hài Lòng Về Chất Lượng Của Chúng Tôi.</p>
                     </div>
                 </div>

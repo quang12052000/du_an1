@@ -8,7 +8,7 @@
 </head>
 <style>
     .container-fliud{
-        margin-top: 200px;
+        margin-top: 80px;
     }
     .tab-pane img{
         min-height: 600px;
@@ -33,7 +33,7 @@
         font-size: 12pt;
     }
 </style>
-    <div class="container" style=" margin-left:100px;">
+    <div class="container" style="margin-left:100px;">
         <div class="container-fliud">
             <div class="wrapper row" style="width: 1500px;">
                 <div class="preview col-md-6">

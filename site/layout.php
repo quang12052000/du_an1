@@ -82,7 +82,7 @@
 
                         <div class="row mb-5">
                             <div class="col-lg-7 intro">
-                            <h1><strong>Thuê một chiếc xe </strong> là trong tầm tay của bạn.</h1>
+                            <h1><p style="font-weight:bold; font-size:40pt">Thuê một chiếc xe</p> là trong tầm tay của bạn.</h1>
                             </div>
                         </div>
 
@@ -92,24 +92,30 @@
 
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <select name="" id="" class="custom-select form-control">
-                      <option value="">Loại Xe</option>
-                      <option value="">Ferrari</option>
-                      <option value="">Toyota</option>
-                      <option value="">Ford</option>
-                      <option value="">Lamborghini</option>
-                    </select>
+                                        <option value="">Loại Xe</option>
+                                        <option value="">Ferrari</option>
+                                        <option value="">Toyota</option>
+                                        <option value="">Ford</option>
+                                        <option value="">Lamborghini</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
-                                    <div class="form-control-wrap">
-                                        <input type="text" id="cf-3" placeholder="bắt đầu" class="form-control datepicker px-3">
-                                        <span class="icon icon-date_range"></span>
-                                    </div>
+                                    <select name="" id="" class="custom-select form-control">
+                                        <option value="">số chỗ</option>     
+                                        <option value="">7 chỗ</option>
+                                        <option value="">16 chỗ</option>
+                                        <option value="">32 chỗ</option>
+                                        <option value="">54 chỗ</option>                                  
+                                    </select>
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
-                                    <div class="form-control-wrap">
-                                        <input type="text" id="cf-4" placeholder="Kết Thúc" class="form-control datepicker px-3">
-                                        <span class="icon icon-date_range"></span>
-                                    </div>
+                                    <select name="" id="" class="custom-select form-control">
+                                        <option value="">Xe</option>
+                                        <option value="">Ferrari</option>
+                                        <option value="">Toyota</option>
+                                        <option value="">Ford</option>
+                                        <option value="">Lamborghini</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3 mb-md-0 col-md-3">
                                     <input type="submit" value="Tìm ngay" class="btn btn-primary btn-block py-3">
