@@ -76,7 +76,7 @@
                                     </div> <span class="review-no">Số lượt xem : <?=$ctxe['Soluotxem']?></span>
                                 </div>
                                 <p class="product-description"></p><?=$ctxe['mota']?></p>
-                                <h4 class="price">Giá Thuê:  <?=$ctxe['Gia_thue']?>đ/ngày</h4>
+                                  <h4 class="price">Giá Thuê: <span><?=number_format($ctxe['Gia_thue'],0,'.','.')?>VNĐ/ngày</span></h4>
                                 </p>
                                 <table>
                                 <p>ĐẶC ĐIỂM</p>
