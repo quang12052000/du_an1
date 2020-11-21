@@ -24,7 +24,8 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;    
+    cursor: pointer;  
+    
     }
     .btn-default{
         width: 100px;
@@ -32,8 +33,29 @@
         background-color: aquamarine;
         font-size: 12pt;
     }
+    .slidershow{
+        width: 100%;
+        min-height: 500px;
+        background-color: blue;
+        margin-left: 150px;
+        
+    }
+    .modal-body input{
+        width: 75%;
+        height: 50px;
+        border-radius: 20px 20px 20px;
+        opacity: 0.5;
+    }
+    .modal-content{
+        background-image: radial-gradient(circle, bisque, crimson, indigo);
+    }
+    .modal-body{
+        font-family: Courier;
+        font-display: 1s;
+    }
 </style>
     <div class="container" style="margin-left:100px;">
+   
         <div class="container-fliud">
             <div class="wrapper row" style="width: 1500px;">
                 <div class="preview col-md-6">
@@ -123,5 +145,54 @@
                 </div>
             </div>
         </div>
-
+      <div class="slidershow">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+ 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+ 
+      <div class="item active">
+        <img src="images/product/1.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="" alt="">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+ 
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    </div>
+ 
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+      </div>
     </div>
