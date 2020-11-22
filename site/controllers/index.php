@@ -1,5 +1,7 @@
 <?php
    require_once "./site/models/index.php"; 
+   $loaixe=loaixe();
+   $hangxe=hangxe();
   $act = "index";//chức năng mặc định
   if(isset($_GET["act"])==true) $act=$_GET["act"];//tiếp nhận chức năng user request
   switch ($act) {
@@ -7,6 +9,23 @@
         $showxe=showxe();
         $view="./site/views/home.php";
         require_once "./site/layout.php";
+    break;
+    case 'timkiem':
+      if (isset($_POST['hx'])) {
+        $hx=$_POST['hx'];
+      } else {
+        $hx="";
+      }
+      if (isset($_POST['lx'])) {
+        $lx=$_POST['lx'];
+      } else {
+        $lx="";
+      }
+      
+      $timkiem=timkiem($hx,$lx);
+      $view="./site/views/timkiem.php";
+      require_once "./site/layout.php";
+     
     break;
     case "ctxe":
       $idxe=$_GET['idxe'];

@@ -86,29 +86,42 @@
                             </div>
                         </div>
 
-                        <form class="trip-form">
+                        <form class="trip-form" method="post" action="index.php?act=timkiem">
 
                             <div class="row align-items-center">
 
-                                <div class="mb-3 mb-md-0 col-md-3">
-                                    <select name="" id="" class="custom-select form-control">
-                                        <option value="">Loại Xe</option>
+                                <div class="mb-3 mb-md-0 col-md-4">
+                                    <select name="hx" id="" class="custom-select form-control">
+                                    <option value="">Hãng Xe</option>
+                                    <?php
+                                        foreach ($hangxe as $hx) {
+                                    echo ' <option value="'.$hx['Id_hangxe'].'">'.$hx['Tenhang'].'</option>';
+                                        }
+                                        ?>
+                                        <!-- <option value="">Loại Xe</option>
                                         <option value="">Ferrari</option>
                                         <option value="">Toyota</option>
                                         <option value="">Ford</option>
-                                        <option value="">Lamborghini</option>
+                                        <option value="">Lamborghini</option> -->
+                                        
                                     </select>
                                 </div>
-                                <div class="mb-3 mb-md-0 col-md-3">
-                                    <select name="" id="" class="custom-select form-control">
-                                        <option value="">số chỗ</option>     
+                                <div class="mb-3 mb-md-0 col-md-4">
+                                    <select name="lx" id="" class="custom-select form-control">
+                                    <option value="">số chỗ</option> 
+                                    <?php
+                                        foreach ($loaixe as $k) {
+                                    echo ' <option value="'.$k['Id_loaixe'].'">'.$k['Loaixe'].' chỗ</option>';
+                                        }
+                                        ?>
+                                        <!-- <option value="">số chỗ</option>     
                                         <option value="">7 chỗ</option>
                                         <option value="">16 chỗ</option>
                                         <option value="">32 chỗ</option>
-                                        <option value="">54 chỗ</option>                                  
+                                        <option value="">54 chỗ</option>                                   -->
                                     </select>
                                 </div>
-                                <div class="mb-3 mb-md-0 col-md-3">
+                                <!-- <div class="mb-3 mb-md-0 col-md-3">
                                     <select name="" id="" class="custom-select form-control">
                                         <option value="">Xe</option>
                                         <option value="">Ferrari</option>
@@ -116,8 +129,8 @@
                                         <option value="">Ford</option>
                                         <option value="">Lamborghini</option>
                                     </select>
-                                </div>
-                                <div class="mb-3 mb-md-0 col-md-3">
+                                </div> -->
+                                <div class="mb-3 mb-md-0 ml-3 col-md-3">
                                     <input type="submit" value="Tìm ngay" class="btn btn-primary btn-block py-3">
                                 </div>
                             </div>

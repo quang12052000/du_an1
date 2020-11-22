@@ -12,4 +12,34 @@ function checkdn($user,$pass){
     $sql="SELECT * FROM nguoi_dung WHERE ten_dangnhap='$user' AND mat_khau='$pass'";
     return queryOne($sql);
 }
+function loaixe(){
+    $sql="SELECT * FROM loai_xe";
+    return query($sql);
+}
+function hangxe(){
+    $sql="SELECT * FROM hang_xe";
+    return query($sql);
+}
+function timkiem($hx,$lx){
+    if ($hx!="") {
+        $shx="xe.Id_hangxe= $hx";
+      
+    } else {
+        $shx="";
+    }
+    if ($lx!="") {
+        $slx="xe.Id_loaixe=$lx";
+    } else {
+        $slx="";
+      
+    }
+    if ($slx!=""&&$shx!="") {
+        $sql="SELECT * FROM `xe` WHERE $shx AND $slx";
+    } else {
+        $sql="SELECT * FROM `xe` WHERE $shx $slx";
+    }
+    
+    
+    return query($sql);
+}
 ?>
