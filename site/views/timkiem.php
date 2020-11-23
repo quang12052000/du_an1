@@ -1,3 +1,9 @@
+<style>
+    .listing {
+        background-color:lightcyan;
+        margin-left: 20px;
+    }
+</style>
 <div class="row" style=" margin-bottom:-120px;margin-top:80px">         
                 <?php
                 if (isset($timkiem)) {
