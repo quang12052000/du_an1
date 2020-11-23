@@ -64,7 +64,7 @@
                                 <li><a href="testimonials.html" class="nav-link">Các Đánh Giá</a></li>
                                 <?php
                                 if (isset($_SESSION['user'])) {
-                                echo ' <a href="index.php?act=logout"> <button type="dangnhap">Đăng xuất</button></a>';
+                                echo '<a href="index.php?act=logout"> <button type="dangnhap">Đăng xuất</button></a>';
                                 }else{
                                     echo '<a href="index.php?act=login1"> <input type="submit" value="Đăng Nhập"></a>';
                                 }
