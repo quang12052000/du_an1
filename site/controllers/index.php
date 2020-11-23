@@ -30,9 +30,18 @@
     case "ctxe":
       $idxe=$_GET['idxe'];
       $ctxe=ctxe($idxe);
+      $bl=getbinhluan($idxe);
+      $manganh=anhxe($ctxe['image_list']);
       $view="./site/views/ctxe.php";
       require_once "./site/layout.php";
     break;
+    case "thembl":
+      $id_nguoidung=$_SESSION['id'];
+      $id_xe=$_POST['id'];
+      $cmt=$_POST['comment'];
+      $ngay=date('y/m/d');
+      thembl($id_nguoidung,$id_xe,$cmt,$ngay);
+      break;
     case "login1":
       require_once "./site/views/login.php";
     

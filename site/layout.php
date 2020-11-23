@@ -60,7 +60,7 @@
                         <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                             <ul class="site-menu main-menu js-clone-nav ml-auto ">
                                 <li class="active"><a href="index.php" class="nav-link">Home</a></li>
-                                <li><a href="listing.html" class="nav-link">Danh Sách Xe</a></li>
+                                <li><a href="index.php?act=ctxe&idxe" class="nav-link">Danh Sách Xe</a></li>
                                 <li><a href="testimonials.html" class="nav-link">Các Đánh Giá</a></li>
                                 <?php
                                 if (isset($_SESSION['user'])) {
