@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CarRen Fpoly &mdash;</title>
+    <title>CarRental Poly &mdash;</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -21,6 +21,15 @@
     <link rel="stylesheet" href="./site/views/css/style.css">
 
 </head>
+<style>
+    .site-logo{
+        width: 300px;
+        font-size: 13pt;
+        }
+        .site-logo strong{
+            font-size: 20pt;
+        }
+</style>
 <body>
     <div class="site-wrap" id="home-section">
 
@@ -39,7 +48,7 @@
 
                     <div class="col-3">
                         <div class="site-logo">
-                            <a href="index.php"><strong>carRen Fpoly</strong></a>
+                            <a href="index.php"><strong>CarRental Poly</strong></a>
                         </div>
                     </div>
 
