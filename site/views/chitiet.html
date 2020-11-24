@@ -22,34 +22,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-    .rowbannerchinh{
+    .rowbannerchinh {
         float: left;
         width: 100%;
         height: 600px;
         margin-bottom: 150px;
         position: relative;
     }
-
-    .rowbannerchinh>img{
+    
+    .rowbannerchinh>img {
         width: 100%;
         height: 600px;
         object-fit: cover;
     }
-
-    .btn1{
+    
+    .btn1 {
         position: absolute;
         width: 100px;
         left: 20px;
         top: 47%;
     }
-
-    .btn2{
+    
+    .btn2 {
         position: absolute;
         width: 100px;
         right: 20px;
         top: 47%;
     }
-
+    
     .btn1 img,
     .btn2 img {
         width: 100%;
@@ -88,7 +88,7 @@
                             <li><a href="testimonials.html" class="nav-link">Các Đánh Giá</a></li>
                             <button type="dangnhap">login</button>
                             <button type="dangky">signin</button>
-                            
+
                         </ul>
                     </nav>
                 </div>
@@ -101,33 +101,34 @@
 
     <div class="hero" style="background-image: url('images/hero_1_a.jpg');">
         <script>
-    var images = [
-        "img/1.jpg",
-        "img/2.jpg",
-        "img/3.jpg",
-        "img/4.jpg",
-        "img/5.jpg",
-        "img/6.jpg"
-    ];
-    var num = 0;
+            var images = [
+                "img/1.jpg",
+                "img/2.jpg",
+                "img/3.jpg",
+                "img/4.jpg",
+                "img/5.jpg",
+                "img/6.jpg"
+            ];
+            var num = 0;
 
-    function next() {
-        var slider = document.getElementById('slider');
-        num++;
-        if (num>=images.length) {
-            num = 0;
-        }
-        slider.src = images[num];
-    }
-    function prev() {
-        var slider = document.getElementById('slider');
-        num--;
-        if (num<0) {
-            num = images.length -1;
-        }
-        slider.src = images[num];
-    }
-</script>
+            function next() {
+                var slider = document.getElementById('slider');
+                num++;
+                if (num >= images.length) {
+                    num = 0;
+                }
+                slider.src = images[num];
+            }
+
+            function prev() {
+                var slider = document.getElementById('slider');
+                num--;
+                if (num < 0) {
+                    num = images.length - 1;
+                }
+                slider.src = images[num];
+            }
+        </script>
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-10">
@@ -181,62 +182,63 @@
                                 <p>ĐẶC ĐIỂM</p>
                                 <h6>Số ghế: 6</h6>
                                 <span>Truyền động: Số tự động</span>
-                                
+
                                 <h5>Nhiên liệu: Xăng</h5>
                                 Mức tiêu thụ nhiêu liệu: 5.4 lít/100km
                                 <strong></strong>
                             </table>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="details col-md-6">
                     <h3 class="product-title" style="color: black; font-weight: bolder;">MITSUBISHI XPANDER 2019</h3>
-                                <div class="rating">
-                                    <div class="stars"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
-                                    </div> <span class="review-no">123 đánh giá</span>
-                                </div>
-                                <p class="product-description"></p>Mitsubishi Motors Việt Nam (MMV) và các Nhà phân phối (NPP) ủy quyền của Mitsubishi trên toàn quốc sẵn sàng mang tới cho quý khách hàng những chương trình trưng bày và trải nghiệm lý thú với các mẫu xe nổi bật như Xpander, [...]</p>
-                                <h4 class="price">Giá Thuê: 2.000.000đ/ngày</h4>
-                                </p>
+                    <div class="rating">
+                        <div class="stars"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
+                        </div> <span class="review-no">123 đánh giá</span>
+                    </div>
+                    <p class="product-description"></p>Mitsubishi Motors Việt Nam (MMV) và các Nhà phân phối (NPP) ủy quyền của Mitsubishi trên toàn quốc sẵn sàng mang tới cho quý khách hàng những chương trình trưng bày và trải nghiệm lý thú với các mẫu xe nổi bật như Xpander, [...]</p>
+                    <h4 class="price">Giá Thuê: 2.000.000đ/ngày</h4>
+                    </p>
                     <div class="form-thuexe" style="width:100%; border: 1px black solid ; height: 900px; border-radius: 20px 20px 20px; box-shadow: slategray 5px 10px 10px 5px;">
                         <form>
-                            <center><div class="form-group">
-                                <h1 style="position: absolute; margin-left: 130px; margin-top: -35px; color: green; font-weight: bold; text-shadow: gray 10px 5px 10px; z-index: 999;">THÔNG TIN</h1>
+                            <center>
+                                <div class="form-group">
+                                    <h1 style="position: absolute; margin-left: 130px; margin-top: -35px; color: green; font-weight: bold; text-shadow: gray 10px 5px 10px; z-index: 999;">THÔNG TIN</h1>
+                                    <br>
+                                    <label for="exampleInputEmail1"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Họ tên khách Hàng</span></label>
+                                    <input type="hoten" class="form-control" id="hoten" aria-describedby="hoten" style="width:85%" placeholder="Họ và Tên">
+                                    <small id="hoten" class="form-text text-muted"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Địa chỉ khách Hàng</span></label>
+                                    <input type="diachi" class="form-control" id="diachi" style="width:85% " placeholder="Địa Chỉ">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sdt"><span class="d-block text-black" style="font-size: 18pt; margin-right: 250px;">Số Điện Thoại</span></label>
+                                    <input type="sdt" class="form-control" id="sdt" style="width:85%" placeholder="Số Điện Thoại">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gmail"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Gmail Khách Hàng</span></label>
+                                    <input type="gmail" class="form-control" id="gmail" style="width:85%" placeholder="Gmail">
+                                </div>
+                                <span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Thời Gian bắt đầu:</span>
+                                <div class="form-control-wrap">
+                                    <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3" style="width:85%">
+                                    <span class="icon icon-date_range"></span>
+                                </div>
+                                <span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Thời Gian Kết Thúc:</span></li>
+                                <div class="form-control-wrap">
+                                    <input type="text" id="cf-4" placeholder="Drop off" class="form-control datepicker px-3" style="width:85%">
+                                    <span class="icon icon-date_range"></span>
+                                </div>
                                 <br>
-                              <label for="exampleInputEmail1"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Họ tên khách Hàng</span></label>
-                              <input type="hoten" class="form-control" id="hoten" aria-describedby="hoten" style="width:85%" placeholder="Họ và Tên">
-                              <small id="hoten" class="form-text text-muted"></small>
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Địa chỉ khách Hàng</span></label>
-                              <input type="diachi" class="form-control" id="diachi"style="width:85% " placeholder="Địa Chỉ">
-                            </div>
-                            <div class="form-group">
-                                <label for="sdt"><span class="d-block text-black" style="font-size: 18pt; margin-right: 250px;">Số Điện Thoại</span></label>
-                                <input type="sdt" class="form-control" id="sdt"style="width:85%" placeholder="Số Điện Thoại">
-                              </div>
-                            <div class="form-group">
-                               <label for="gmail"><span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Gmail Khách Hàng</span></label>
-                               <input type="gmail" class="form-control" id="gmail"style="width:85%" placeholder="Gmail">
-                            </div>
-                              <span class="d-block text-black" style="font-size: 18pt; margin-right: 200px;">Thời Gian bắt đầu:</span>
-                              <div class="form-control-wrap">
-                                <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3" style="width:85%">
-                                <span class="icon icon-date_range"></span>
-                              </div>
-                            <span class="d-block text-black"style="font-size: 18pt; margin-right: 200px;">Thời Gian Kết Thúc:</span></li>
-                            <div class="form-control-wrap">
-                              <input type="text" id="cf-4" placeholder="Drop off" class="form-control datepicker px-3" style="width:85%">
-                              <span class="icon icon-date_range"></span>
-                            </div>
-                            <br>    
-                            <div class="action">
-                                <a href="contact.html" target="_blank"> <button class="add-to-cart btn btn-default" type="button">Đặt Xe NGAY</button> </a>
-                                <a href="http://hocwebgiare.com/" target="_blank"> <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> </a>
-                            </div>  
+                                <div class="action">
+                                    <a href="contact.html" target="_blank"> <button class="add-to-cart btn btn-default" type="button">Đặt Xe NGAY</button> </a>
+                                    <a href="http://hocwebgiare.com/" target="_blank"> <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> </a>
+                                </div>
                             </center>
-                          </form>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -286,7 +288,8 @@
                         </div>
                     </div>
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15675.210986536726!2d106.6085871697754!3d10.826402200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1605169971153!5m2!1svi!2s" width="100%" height="660" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15675.210986536726!2d106.6085871697754!3d10.826402200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1605169971153!5m2!1svi!2s" width="100%" height="660" frameborder="0"
+                            style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>

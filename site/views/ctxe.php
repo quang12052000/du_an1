@@ -11,7 +11,6 @@
         margin-top: 80px;
     }
     .tab-pane img{
-        min-height: 600px;
         width: 1000px;
     }
     .button {
@@ -44,18 +43,88 @@
         font-family: Courier;
         font-display: 1s;
     }
+<<<<<<< HEAD
     .modal-content{
         width: 600px;
     }
+=======
+    .rowbannerchinh {
+        float: left;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 150px;
+        position: relative;
+    }
+    
+    .rowbannerchinh>img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+    
+    .btn1 {
+        position: absolute;
+        width: 100px;
+        left: 20px;
+        top: 47%;
+    }
+    
+    .btn2 {
+        position: absolute;
+        width: 100px;
+        right: 20px;
+        top: 47%;
+    }
+    
+    .btn1 img,
+    .btn2 img {
+        width: 100%;
+    }
 </style>
-    <div class="container" style="margin-left:100px;">
+>>>>>>> 8400f2e0626ae5f0ccd265d07055e36bdb06fb59
+</style>
+<script>
+    var num = 0;
+
+    function next() {
+        var slider = document.getElementById('slider');
+        num++;
+        if (num>=images.length) {
+            num = 0;
+        }
+        slider.src = images[num];
+    }
+    function prev() {
+        var slider = document.getElementById('slider');
+        num--;
+        if (num<0) {
+            num = images.length -1;
+        }
+        slider.src = images[num];
+    }
+</script>
+    <div class="container">
    
         <div class="container-fliud">
-            <div class="wrapper row" style="width: 1500px;">
+            <div class="wrapper row" >
                 <div class="preview col-md-6">
                     <div class="preview-pic tab-content">
-                        <div class="tab-pane active" id="pic-1"><img src="./site/views/images/<?=$ctxe['hinh_xe']?>" alt="">
-                        </div>
+                        <?php
+                        $i=1;
+                        foreach ($manganh as $k) {
+                            if ($i!=1) {
+                                echo '  <div class="tab-pane " id="pic-'.$i.'"><img src="./site/views/images/product/images_list/'.$k.'" alt="">
+                        </div>';
+                            } else {
+                                echo '  <div class="tab-pane active" id="pic-'.$i.'"><img src="./site/views/images/product/images_list/'.$k.'" alt="">
+                                </div>';
+                            }
+                            
+                       
+                        $i++;
+                        }
+                        ?>
+                      
                         <!-- <div class="tab-pane" id="pic-2"><img src="images/product/details/1.jpg">
                         </div>
                         <div class="tab-pane" id="pic-3"><img src="images/product/details/2.jpg">
@@ -65,9 +134,23 @@
                         <div class="tab-pane" id="pic-5"><img src="images/product/details/4.jpg">
                         </div> -->
                         <ul class="preview-thumbnail nav nav-tabs">
-                            <li class="active">
-                                <a data-target="#pic-1" data-toggle="tab"><img src="./site/views/images/<?=$ctxe['hinh_xe']?>"></a>
-                            </li>
+                        <?php
+                        $v=1;
+                        foreach ($manganh as $d) {
+                            if ($v!=1) {
+                                echo '  <li>
+                        <a data-target="#pic-'.$v.'" data-toggle="tab"><img src="./site/views/images/product/images_list/'.$d.'"></a>
+                    </li>';
+                            }else{
+                                echo '  <li class="active">
+                                <a data-target="#pic-'.$v.'" data-toggle="tab"><img src="./site/views/images/product/images_list/'.$d.'"></a>
+                            </li>';
+                            }
+                       
+                        $v++;
+                        }
+                        ?>
+                          
                             <!-- <li>
                                 <a data-target="#pic-2" data-toggle="tab"><img src="images/product/details/1.jpg"></a>
                             </li>
@@ -98,13 +181,21 @@
                                 <p>ĐẶC ĐIỂM</p>
                                 <h6>Số ghế: <?=$ctxe['Loaixe']?></h6>
                                 <span>Tinh nang: <?=$ctxe['tinh_nang']?></span>
-                                
+                               
                                 <h5>Nhiên liệu: <?=$ctxe['Nhien_lieu']?></h5>
                                     <!-- Trigger the modal with a button -->
-                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Thuê Xe Ngay</button>
+                                    <?php
+                                     if (isset($_SESSION['user'])) { 
+                                        echo '  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Thuê Xe Ngay</button>';
+                                      } else {
+                                        echo ' <p style="color:red;font-weight:bold;font-size:25px">BẠN CHƯA ĐĂNG NHẬP</p>';
+                                      }
+                                    ?>
+                                  
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="myModal" role="dialog">
+                                    <input type="hidden" id="id_xe" name="id_xe" value="<?=$ctxe['id_xe']?>">
                                         <div class="modal-dialog">
                                         
                                         <!-- Modal content-->
@@ -139,7 +230,85 @@
                             </table>
                     </div>
                 </div>
+                <div class=" col-10">
+        <div class="comment-wrapper">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    Bình luận
+                </div>
+                <div class="panel-body mt-3">
+                  <input type="hidden" id="id_xe" name="id_xe" value="<?=$row['id_xe']?>">
+                    <?php
+                    if (isset($_SESSION['user'])) { 
+                      echo '<textarea class="form-control" id="comment" placeholder="Viết bình luận....." rows="3"></textarea>
+                      <br>
+                      <button type="button" class="btn btn-info pull-right comment">Bình luận</button>
+                      <div class="clearfix"></div>';
+                    } else {
+                      echo 'BẠN CHƯA ĐĂNG NHẬP';
+                    }
+                    
+                    ?>
+                    <hr>
+                    <ul class="media-list">
+                     <?php
+                     foreach ($bl as $b) {
+                       if ($b['Thoigian_binhluan']=="0000-00-00 00:00:00") {
+                         $ngay="không xác định";
+                       } else {
+                        $first_date = strtotime($b['Thoigian_binhluan']);
+                        $hientai=date("y-m-d");
+                        $second_date = strtotime($hientai);
+                        $datediff = abs($first_date - $second_date);
+                        $ngay = floor($datediff/60/60/24)." ngày trước";
+                       }
+                       
+
+                     ?>
+                          <li class="media mb-4">
+                            <a href="#" class="pull-left">
+                                <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+                            </a>
+                            <div class="media-body">
+                                <span class="text-muted pull-right">
+                                    <small class="text-muted"><?=$ngay ?></small>
+                                </span>
+                                <strong class="text-success"><?=$b['ho_ten']?></strong>
+                                <p>
+                                   <?=$b['Binh_luan']?>
+                                </p>
+                            </div>
+                        </li>
+                     <?php }
+                     ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
             </div>
         </div>
        
     </div>
+    <script>
+              $(document).ready(function() {
+    let id = $("#id_xe").val();
+    console.log(id);
+    $(".comment").click(function() {
+
+        let comment = $("#comment").val();
+        if (comment != "" && id > 0) {
+            $.ajax({
+                type: "POST",
+                url: "index.php?act=thembl",
+                data: { id: id, comment: comment },
+                success: function(data) {
+                    location.reload();
+                }
+            });
+        }
+    });
+
+});
+    </script>
