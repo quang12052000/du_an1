@@ -33,25 +33,19 @@
         background-color: aquamarine;
         font-size: 12pt;
     }
-    .slidershow{
-        width: 100%;
-        min-height: 500px;
-        background-color: blue;
-        margin-left: 150px;
-        
-    }
     .modal-body input{
         width: 75%;
         height: 50px;
         border-radius: 20px 20px 20px;
         opacity: 0.5;
     }
-    .modal-content{
-        background-image: radial-gradient(circle, bisque, crimson, indigo);
-    }
+    
     .modal-body{
         font-family: Courier;
         font-display: 1s;
+    }
+    .modal-content{
+        width: 600px;
     }
 </style>
     <div class="container" style="margin-left:100px;">
@@ -129,7 +123,9 @@
                                                 <h3>Email</h3>
                                                 <input type="text" name="email">
                                                 <h3>Địa Chỉ</h3>
-                                                <input type="text" name="email">
+                                                <input type="text" name="diachi">
+                                                <h3>CMND</h3>
+                                                <input type="text" name="CMND">
                                                 </center>
                                             </form>
                                             </div>
