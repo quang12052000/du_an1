@@ -43,11 +43,9 @@
         font-family: Courier;
         font-display: 1s;
     }
-<<<<<<< HEAD
     .modal-content{
         width: 600px;
     }
-=======
     .rowbannerchinh {
         float: left;
         width: 100%;
@@ -81,7 +79,6 @@
         width: 100%;
     }
 </style>
->>>>>>> 8400f2e0626ae5f0ccd265d07055e36bdb06fb59
 </style>
 <script>
     var num = 0;
@@ -167,8 +164,8 @@
                     </div>
                     
                 </div>
-                <div class="details col-md-6    ">
-                    <div class="form-thuexe" style="width:80%; height: 900px;">
+                <div class="details col-md-6">
+                    <div class="form-thuexe" style="width:80%; height: 550px; margin-bottom: 20px">
                     <h3 class="product-title" style="color: black; font-weight: bolder;"><?=$ctxe['Ten_xe']?></h3>
                                 <div class="rating">
                                     <div class="stars"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
