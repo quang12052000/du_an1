@@ -188,7 +188,7 @@
                                      if (isset($_SESSION['user'])) { 
                                         echo '  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Thuê Xe Ngay</button>';
                                       } else {
-                                        echo '<a href=""> <p style="color:red;font-weight:bold;font-size:25px">BẠN CHƯA ĐĂNG NHẬP</p> </a>';
+                                        echo ' <p style="color:red;font-weight:bold;font-size:25px;margin-top:35px;">BẠN CHƯA<a href="index.php?act=login1" style="color:red; text-decoration: none;"> ĐĂNG NHẬP</a> </p>' ;
                                       }
                                     ?>
                                   
