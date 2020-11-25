@@ -29,22 +29,25 @@
     .btn-default{
         width: 100px;
         height: 50px;
-        background-color: aquamarine;
+        background-color: red;
         font-size: 12pt;
     }
     .modal-body input{
-        width: 75%;
+        width: 45%;
         height: 50px;
-        border-radius: 20px 20px 20px;
-        opacity: 0.5;
+        margin-left:3%;
+        margin-bottom:4%;
+       
+       
     }
     
     .modal-body{
-        font-family: Courier;
+        font-family: Arial, Helvetica, sans-serif;
         font-display: 1s;
     }
     .modal-content{
-        width: 600px;
+        width: 900px;
+        margin-left: -30%;
     }
     .rowbannerchinh {
         float: left;
@@ -202,23 +205,27 @@
                                             </div>
                                             <div class="modal-body">
                                             <form action="">
-                                                <center>
-                                                <h1>Thông Tin Của Bạn</h1>
-                                                <h3>Họ Và Tên</h3>
-                                                <input type="text" name="hoten">
-                                                <h3>Số Điện Thoại</h3>
-                                                <input type="text" name="sdr">
-                                                <h3>Email</h3>
-                                                <input type="text" name="email">
-                                                <h3>Địa Chỉ</h3>
-                                                <input type="text" name="diachi">
-                                                <h3>CMND</h3>
-                                                <input type="text" name="CMND">
-                                                </center>
+                                               
+                                              <center>  <h1>Thông Tin Của Bạn</h1></center>
+                        
+                                                <input type="text" name="ho" placeholder="Họ của bạn" >
+                                                <input type="text" name="ten" placeholder="Tên của bạn" >
+                                                <input type="text" name="ho" placeholder="Email Address" >
+                                                <input type="text" name="ten" placeholder="Số Điện Thoại" >
+                                                <input type="text" name="ten" placeholder="CMND" >
+                                                <input type="text" name="ten" placeholder="Địa Chỉ" >
+                                               
+                                              
+
+                                               
+                                               
+                                                
+                                               
+                                               
                                             </form>
                                             </div>
                                             <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Hoàn Tất</button>
+                                            <button type="button" class="  btn-default" data-dismiss="modal">Hoàn Tất</button>
                                             </div>
                                         </div>
                                         
